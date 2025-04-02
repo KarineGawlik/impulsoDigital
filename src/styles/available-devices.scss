@@ -32,3 +32,23 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .available-devices__list {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para tablets */
+    }
+
+    #icone {
+        font-size: 60px; /* Reduz tamanho do ícone */
+    }
+}
+
+@media (max-width: 480px) {
+    .available-devices__list {
+        grid-template-columns: repeat(1, 1fr); /* 1 coluna para celulares */
+    }
+
+    #icone {
+        font-size: 50px; /* Ícones menores */
+    }
+}

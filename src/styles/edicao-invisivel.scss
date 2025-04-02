@@ -1,0 +1,36 @@
+
+.image-text-section {
+    position: relative; /* Permite o posicionamento absoluto dos filhos */
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    .video {
+        width: 100%;
+        height: auto; 
+        box-shadow: 4px 4px 100px rgba(0, 0, 0, 5.0); 
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__text_container {
+        position: absolute;
+        width: 90%;
+        margin-left: 150px;
+        position: absolute; /* Posiciona o texto sobre o vídeo */
+        top: 50%; /* Move o texto para o centro vertical */
+        left: 40%; /* Move o texto para o centro horizontal */
+        transform: translate(-50%, -50%); /* Ajusta para que o centro do texto seja o ponto de origem */
+        
+        
+        @media (max-width: 768px) {
+            position: relative;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+}
+

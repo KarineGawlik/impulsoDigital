@@ -6,6 +6,7 @@
 @use 'faq';
 @use 'footer';
 @use 'mentoria';
+@use 'edicao-invisivel';
 
 * {
     margin: 0;
@@ -72,25 +73,3 @@ body {
     margin-bottom: 8px;
     cursor: pointer;
 }
-
-.image-text-section {
-    position: relative; /* Permite o posicionamento absoluto dos filhos */
-    margin-top: 50px;
-    margin-bottom: 100px;
-
-    video {
-        width: 100%;
-        height: auto; 
-        box-shadow: 4px 4px 100px rgba(0, 0, 0, 5.0); 
-    }
-
-    &__text_container {
-        width: 90%;
-        margin-left: 150px;
-        position: absolute; /* Posiciona o texto sobre o vídeo */
-        top: 50%; /* Move o texto para o centro vertical */
-        left: 40%; /* Move o texto para o centro horizontal */
-        transform: translate(-50%, -50%); /* Ajusta para que o centro do texto seja o ponto de origem */
-    }
-}
-

@@ -19,3 +19,39 @@
         max-width: 600px; 
     }
 }
+
+@media (max-width: 768px) {
+    .mentoria {
+        flex-direction: column; /* Empilhar os itens */
+        align-items: center;
+        text-align: center;
+        margin-bottom: 100px;
+        padding: 0 20px;
+    }
+
+    .video-mentoria {
+        width: 90%; /* Ajusta o tamanho do vídeo */
+        max-width: 500px;
+    }
+
+    .image--text-section__text_container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mentoria {
+        margin-bottom: 80px;
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    .video-mentoria {
+        width: 100%; /* Ocupa toda a largura disponível */
+        max-width: 100%;
+    }
+
+    .image--text-section__text_container {
+        max-width: 100%;
+    }
+}
